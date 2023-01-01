@@ -14,4 +14,7 @@ lsp.configure('sumneko_lua', {
     }
 })
 
+-- Autoformat 
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.formatting_sync()]]
+
 lsp.setup()
